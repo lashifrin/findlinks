@@ -15,7 +15,7 @@ func main() {
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	url := r.URL.Query().Get("q")
-	fmt.Fprintf(w, "Page = %q\n", url)
+	fmt.Fprintf(w, "Main Page = %q\n", url)
 	if len(url) == 0 {
 		return
 	}
